@@ -42,4 +42,41 @@ window.addEventListener('DOMContentLoaded', () => {
   fetchData(); // Load initial data
 
   window.addEventListener('scroll', handleScroll);
-});
+});// Infinite Scroll
+const gallery = document.querySelector('#gallery');
+const loader = document.querySelector('.loader');
+
+let page = 1;
+let fetching = false;
+
+function fetchImages() {
+  fetching = true;
+  loader.style.display = 'block';
+
+  // Simulating a fetch request delay
+  setTimeout(() => {
+    for (let i = 1; i <= 5; i++) {
+      const image = document.createElement('div');
+      image.className = 'thumbnail';
+      image.innerHTML = `<img src="image${page}-${i}.jpg" alt="Image ${page}-${i}">`;
+      gallery.appendChild(image);
+    }
+
+    fetching = false;
+    loader.style.display = 'none';
+    page++;
+  }, 2000);
+}
+
+function checkScroll() {
+  const scrollHeight = document.documentElement.scrollHeight;
+  const scrollTop = document.documentElement.scrollTop;
+  const clientHeight = document.documentElement.clientHeight;
+
+  if (scrollTop + clientHeight >= scrollHeight - 200 && !fetching) {
+    fetchImages();
+  }
+}
+
+window.addEventListener('scroll', checkScroll);
+
