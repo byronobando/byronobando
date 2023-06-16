@@ -6,13 +6,14 @@ body, h1, h2, h3, p, ul, li, form {
 
 body {
   font-family: Arial, sans-serif;
+  height: 100vh;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100%;
   padding: 20px;
 }
 
