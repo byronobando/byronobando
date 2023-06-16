@@ -22,12 +22,12 @@ body {
 
 .left-container {
   width: 300px;
-  background-color: red;
+  background-color: #00FA9A;
 }
 
 .right-container {
   flex: 1;
-  background-color: blue;
+  background-color: #FF0000;
 }
 
 /* Additional Styling */
