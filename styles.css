@@ -22,7 +22,12 @@ body {
 
 .left-container {
   width: 300px;
+  padding: 20px;
   background-color: #00FA9A;
+}
+
+.left-container p {
+  text-align: left;
 }
 
 .right-container {
