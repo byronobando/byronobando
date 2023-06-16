@@ -19,7 +19,7 @@ body {
   box-sizing: border-box;
 }
 
-.side-panel {
+.side-panel-left {
   width: 300px;
   height: 100%;
   padding: 20px;
@@ -29,6 +29,11 @@ body {
   box-sizing: border-box;
   background-color: #f9f9f9;
 }
+
+.side-panel-right {
+  width: 700px;
+  height: 100%;
+  margin-left: 20px;
 
 .profile-info {
   padding-left: 20px;
