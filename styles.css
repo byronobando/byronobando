@@ -37,18 +37,21 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 10%;
+  box-sizing: border-box;
 }
 
 .thumbnail {
-  margin: 10px;
+  width: 18%;
+  margin: 1%;
   cursor: pointer;
   transition: transform 0.3s ease;
   background-color: #000;
 }
 
 .thumbnail img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 5px;
 }
