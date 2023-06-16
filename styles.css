@@ -14,9 +14,25 @@ body {
 }
 
 .container {
+  display: flex;
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.left-container {
+  width: 300px;
+  background-color: #eee;
+}
+
+.right-container {
+  flex: 1;
+  background-color: #ccc;
+}
+
+/* Additional Styling */
+.container {
+  height: 100vh;
 }
 
 header {
@@ -41,14 +57,6 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-}
-
-main {
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 20px;
 }
 
 footer {
