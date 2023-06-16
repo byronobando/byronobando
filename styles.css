@@ -89,8 +89,9 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  color: #333;
+  color: #333; /
   padding: 20px;
   text-align: center;
   background-color: transparent;
+  margin-top: auto;
 }
