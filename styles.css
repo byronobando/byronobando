@@ -22,10 +22,12 @@ body {
 .side-panel {
   width: 300px;
   height: 100%;
-  padding-right: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
 }
 
 .profile-info {
@@ -41,9 +43,12 @@ body {
 }
 
 .main-content {
-  width: calc(100% - 320px);
-  flex-grow: 1;
-  padding-left: 20px;
+  width: 700px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
 }
 
 h1 {
