@@ -20,6 +20,11 @@ body {
   padding: 20px;
 }
 
+.left-container,
+.right-container {
+  flex-grow: 1;
+}
+
 .left-container {
   width: 300px;
   padding: 20px;
