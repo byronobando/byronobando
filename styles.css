@@ -40,6 +40,15 @@ body {
   flex: 1;
 }
 
+.left-container img {
+  display: block;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+
 .left-container .footer {
   color: white;
   font-size: 12px;
